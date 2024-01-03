@@ -1,9 +1,9 @@
 global:
-  scrape_interval: 15s
+  scrape_interval: 15s  # 2 spaces before 'scrape_interval'
 
-scrape_configs:
-  - job_name: 'jenkins'
-    static_configs:
-      - targets: ['172.17.0.1:8080']
-          metrics_path: '/prometheus'
+scrape_configs:         # No spaces before 'scrape_configs'
+  - job_name: 'jenkins' # 2 spaces before '- job_name'
+    static_configs:     # 4 spaces before 'static_configs'
+      - targets:        # 6 spaces before '- targets'
+          - '172.17.0.1:8080' # 10 spaces before '- '172.17.0.1:8080''
 
